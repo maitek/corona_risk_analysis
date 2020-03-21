@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='style/images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/vendor/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/css/main.css') }}">
+<!--===============================================================================================-->
+
+
 <title>{{ data.question }}</title>
 </head>
 <body>
 
-<form action="/poll">
-{% for item in data %}
-  <h1>{{ item.question }}</h1>
-  {% for e in item.fields %}
-     <input type={{ item.type }} name="field" value="{{ e }}"> {{ e }}<br>
-  {% endfor %}
-{% endfor %}
-<input type="submit" value="Submit" />
-</form>
+<div class="bg-contact2" style="background-image: {{ url_for('static', filename='images/bg-01.jpg') }} ;">
+  <div class="container-contact2">
+      <div class="wrap-contact2">
+          <form class="contact2-form validate-form" action="/poll"></form>
+            <span class="contact2-form-title">
+              Are you infected?
+            </span>
+
+              {% for item in data %}
+              <div class="wrap-input2 validate-input">
+              <p>{{ item.question }}</p>
+              {% for e in item.fields %}
+                  <input type={{ item.type }} name="{{ item.name }}}" value="{{ e }}"> {{ e }}<br>
+              {% endfor %}
+              </div>
+              {% endfor %}
+
+              <input type="submit" value="Submit" />
+          </form>
+      </div>
+  </div>
+</div>
 </body>
 </html>
