@@ -36,7 +36,7 @@
               <div class="wrap-input2 validate-input">
               <p>{{ item.question }}</p>
               {% for e in item.fields %}
-                  <input type={{ item.type }} name="field" value="{{ e }}"> {{ e }}<br>
+                  <input type={{ item.type }} name="{{ item.name }}}" value="{{ e }}"> {{ e }}<br>
               {% endfor %}
               </div>
               {% endfor %}

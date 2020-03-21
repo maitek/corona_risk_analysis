@@ -6,18 +6,20 @@ poll_data_array = [
   {
    'question' : 'Did you travel with public transport the last 14 days?',
    'fields'   : ['Yes', 'No'],
-   'type'     : 'radio'
+   'type'     : 'radio',
+   'name'     : "q1"
   },
   {
    'question' : 'How many people did you have close contact with (less than 2 meters)?',
    'fields'   : ['None', '1-10', '10-100', 'More than 100'],
-   'type'     : 'radio'
-
+   'type'     : 'radio',
+   'name'     : "q2"
   },
   {
    'question' : 'Do you have any of these symptoms? ',
    'fields'   : ['Fever', 'Cough', 'Shortness of breath'],
-   'type'     : 'checkbox'
+   'type'     : 'checkbox',
+   'name'     : "q3"
   },
 
 
