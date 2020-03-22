@@ -1,0 +1,15 @@
+- question: Do you currently have any health issues?
+  fields: ["Yes", "No"] 
+  type: radio
+  name: q1
+
+-  question: If yes, which of the following symptoms are relevant to you?
+   fields: ["Fever", "Dry cough"]
+   type: checkbox
+   name: q2
+
+-  question: Did you travel with public transport the last 14 days?
+   fields: ["Yes", "No"]
+   type: radio
+   name: q3
+    
