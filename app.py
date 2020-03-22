@@ -12,6 +12,13 @@ def root():
 
     return render_template('main.html', data=poll_data_array)
  
+@app.route('/poll')
+def poll():
+    # vote = request.args.get('field')
+
+    results = "100%"
+    return render_template('results.html', data=results)
+
 if __name__ == "__main__":
     app.run(debug=True)
 
