@@ -26,10 +26,9 @@ def poll():
         print(item)
         #if item["type"] == "radio":
         score_data[name] = float(request.args.get(name))
-        print(score_data)
-    
+
     data = dict()
-    data["results"] = calculate(score_data)
+    data["results"] = "{} %".format(round(calculate(score_data)))
     return render_template('results.html', data=data)
 
 
