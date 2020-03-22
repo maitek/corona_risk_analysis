@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import os
 import yaml
 app = Flask(__name__)
@@ -14,10 +14,9 @@ def root():
  
 @app.route('/poll')
 def poll():
-    # vote = request.args.get('field')
-
-    results = "100%"
-    return render_template('results.html', data=results)
+    data = dict()
+    data["results"] = request.args.get('q1')
+    return render_template('results.html', data=data)
 
 if __name__ == "__main__":
     app.run(debug=True)
