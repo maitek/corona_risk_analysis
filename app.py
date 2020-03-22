@@ -24,9 +24,9 @@ def poll():
     for item in poll_data_array:
         name = item["name"]
         print(item)
-        if item["type"] == "radio":
-            score_data[name] = request.args.get(name)
-        print()
+        #if item["type"] == "radio":
+        score_data[name] = float(request.args.get(name))
+        print(score_data)
     
     data = dict()
     data["results"] = calculate(score_data)
