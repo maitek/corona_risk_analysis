@@ -1,140 +1,142 @@
 - question: 1. Do you currently have any health issues?
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]] 
   type: radio
   name: q1
 
 -  question: 1.1. Which of the following symptoms are relevant to you?
-   fields: ["Fever", "Dry cough", "Fatigue", "Sputum Production", "Shortness of Breath", 
-   "Muscle or Joint Pain", "Sore Throat", "Headache", "Chills", "Nausea or Vomitting", "Nasal Congestion", "Diarrhea"]
+   fields: [["Fever", 0], ["Dry cough", 0], ["Fatigue", 0], ["Sputum Production", 0], ["Shortness of Breath", 0], 
+          ["Muscle or Joint Pain", 0], ["Sore Throat", 0], ["Headache", 0], ["Chills", 0], ["Nausea or Vomitting", 0],
+          ["Nasal Congestion", 0], ["Diarrhea", 0]]
    type: checkbox
    name: q2
 
 -  question: 1.2. Since when have you been experiencing these complaints?
-   fields: ["In the last 14 days", "In the last 3 months", "Chronically/Time to Time in the last years", "N/A"]
+   fields: [["In the last 14 days", 0], ["In the last 3 months", 0],
+           ["Chronically/Time to Time in the last years", 0], ["N/A", 0]]
    type: radio
    name: q3
 #    
 - question: 2. Do you know anyone who has been tested positive? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]] 
   type: radio
   name: q4
 
 - question: 2.1. If yes, have you met this person in the last 14 days? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q5
 
 - question: 2.1.1. How much time did you spend time with this person? 
-  fields: ["0-1 hours", "1+"] 
+  fields: [["0-1 hours", 0], ["1+", 1]] 
   type: radio
   name: q6
 
 - question: 2.1.2. If no, did you meet anybody who met this person in the last 14 days? 
-  fields: ["yes", "no"] 
+  fields: [["0-1 hours", 0], ["1+", 1]] 
   type: radio
   name: q7
 #
 - question: 3. Are you working for Health Institutions? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q8
 
 - question: 3.1. Are you working in close contact with people? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q9
 
 - question: 3.2. How many people do you get in contact with in a day?
-  fields: ["0", "1-5", "6-10", "10+"] 
+  fields: [["0", 0], ["1-5", 1], ["6-10", 2], ["10+", 3]] 
   type: radio
   name: q10
 
 - question: 3.3. How many of these people are new contacts?
-  fields: ["0", "1-5", "6-10", "10+"] 
+  fields: [["0", 0], ["1-5", 1], ["6-10", 2], ["10+", 3]] 
   type: radio
   name: q11
 ##
 - question: 4. Do you or people you have close contact with work in the health sector? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q12
 
 - question: 4.1. How close are you with these people? 
-  fields: ["Sharing same household", "I meet them multiple times in a week", "Rare Contact"] 
+  fields: [["Sharing same household", 0], ["I meet them multiple times in a week", 1], ["Rare Contact", 2]] 
   type: radio
   name: q13
 #
 - question: 5. How often have you used public transportation the last 14 days?
-  fields: ["0", "1-14","15+"] 
+  fields: [["0", 0], ["1-14", 0],["15+", 0]] 
   type: radio
   name: q14
 
 - question: 6. Have you been to any high risk area in the last 14 days?
-  fields: ["1", "2-3", "4+"] 
+  fields: [["1", 0], ["2-3", 0], ["4+", 0]] 
   type: radio
   name: q15
 
 - question: 7. Are you working from home? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q16
 
 - question: 7.1. If no, do you work in close contact with people? 
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q17
 
 - question: 7.2. How many people do you get in contact with in a day? 
-  fields: ["0", "1-5", "5-10", "10+"] 
+  fields: [["0", 0], ["1-5", 1], ["5-10", 2], ["10+", 3]] 
   type: radio
   name: q18
 
 - question: 7.3. How many new people do you do you get in contact with in a day? 
-  fields: ["0", "1-5", "5-10", "10+"] 
+  fields: [["0", 0], ["1-5", 1], ["5-10", 1], ["10+", 1]] 
   type: radio
   name: q19
 
 - question: 8. How many times a week do you visit stores (supermarkets, pharmacies, etc)? 
-  fields: ["0", "1-3", "4-10", "11+"] 
+  fields: [["0", 0], ["1-3", 1], ["4-10", 2], ["11+", 3]] 
   type: radio
   name: q20
 
 - question: 9. How many people are there in your household? 
-  fields: ["1", "2", "3-6", "7+"] 
+  fields: [["1", 0], ["2", 1], ["3-6", 2], ["7+", 3]] 
   type: radio
   name: q21
 # TODO: 12-13 are same questions as 8-9
 - question: 10. How many people do you have close contact with in a day(Less than 2m)?
-  fields: ["0", "1-2", "3-6", "7+"] 
+  fields: [["0", 0], ["1-2", 1], ["3-6", 2], ["7+", 3]] 
   type: radio
   name: q22
 
 - question: 11. How many new people do you have close contact with in a day?
-  fields: ["0", "1-3", "4+"] 
+  fields: [["0", 0], ["1-3", 1], ["4+", 2]] 
   type: radio
   name: q23
 
 - question: 12. Do you exercise?
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q24
 
 - question: 12.1. If yes, do you exercise outdoors?
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q25
 
 - question: 12.2. If yes, how many people do you get close contact during exercise?
-  fields: ["0", "1-5", "6+"] 
+  fields: [["0", 0], ["1-5", 1], ["6+", 2]] 
   type: radio
   name: q26
 
 - question: 13. Are you living in a big city?
-  fields: ["Yes", "No"] 
+  fields: [["Yes", 1], ["No", 0]]  
   type: radio
   name: q27
 
 - question: 13.1. If yes, city center or rural?
-  fields: ["Central", "Rural"] 
+  fields: [["Central", 1], ["Rural", 0]] 
   type: radio
   name: q28
