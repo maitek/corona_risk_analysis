@@ -12,4 +12,4 @@ def calculate(scorelist):
     weight_d = 20
     weight_e = 20
 
-    return results = results_a if ( results_a > 0.6 ) else ( result_a * weight_a + result_b * weight_b + result_c * weight_c + result_d * weight_d + result_e * weight_e )
+    return results = (results_a * 100) if ( results_a > 0.6 ) else ( result_a * weight_a + result_b * weight_b + result_c * weight_c + result_d * weight_d + result_e * weight_e )
