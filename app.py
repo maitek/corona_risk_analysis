@@ -16,10 +16,22 @@ def root():
 @app.route('/poll')
 def poll():
 
-    data = dict()
-    data["results"] = request.args.get('q1')
-    return render_template('results.html', data=data)
+    # parse results
+    score_data = dict()
+    with open("questions.yaml") as f:
+        poll_data_array = yaml.load(f)
     
+    for item in poll_data_array:
+        name = item["name"]
+        print(item)
+        if item["type"] == "radio":
+            score_data[name] = request.args.get(name)
+    
+    data = dict()
+    data["results"] = score_data["q1"]
+    return render_template('results.html', data=data)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
