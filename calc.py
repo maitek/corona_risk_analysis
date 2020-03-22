@@ -11,11 +11,5 @@ def calculate(scorelist):
     weight_c = 30
     weight_d = 20
     weight_e = 20
-<<<<<<< HEAD
- 
-    results = results_a if ( results_a > 0.6 ) else ( result_a * weight_a + result_b * weight_b + result_c * weight_c + result_d * weight_d + result_e * weight_e )
-    return results
-=======
 
-    return results = (results_a * 100) if ( results_a > 0.6 ) else ( result_a * weight_a + result_b * weight_b + result_c * weight_c + result_d * weight_d + result_e * weight_e )
->>>>>>> 51682513ed89d8bb691789c788be9fb528bd2fb1
+    return results = (results_a * 100) if ( results_a > 0.6 ) else ( results_a * weight_a + results_b * weight_b + results_c * weight_c + results_d * weight_d + results_e * weight_e )
