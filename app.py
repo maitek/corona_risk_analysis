@@ -14,10 +14,11 @@ def root():
  
 @app.route('/poll')
 def poll():
+
     data = dict()
     data["results"] = request.args.get('q1')
     return render_template('results.html', data=data)
-
+    
 if __name__ == "__main__":
     app.run(debug=True)
 
