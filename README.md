@@ -10,3 +10,6 @@ sh start_app.sh
 
 Questions are listed in questions.yaml
 
+This project is a proof of concept, and the predictions might currently not be too accurate. The prediction model could be improved according to scientific studies.
+
+
