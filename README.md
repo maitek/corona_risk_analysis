@@ -1,4 +1,4 @@
-# Corona questionere app
+# Corona Questionare Flask App
 Questionare Flask app for estimating your risk of being infected by Covid19
 
 To start the flask server on http://127.0.0.1:5000/
