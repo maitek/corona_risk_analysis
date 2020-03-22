@@ -64,13 +64,13 @@
   type: radio
   name: q13
 #
-- question: 5. Are you working from home? 
-  fields: ["Yes", "No"] 
+- question: 5. How often have you used public transportation the last 14 days?
+  fields: ["0", "1-14","15+"] 
   type: radio
   name: q14
 
-- question: 6.1. If no, do you work in close contact with people? 
-  fields: ["Yes", "No"] 
+- question: 6. Have you been to any high risk area in the last 14 days?
+  fields: ["1", "2-3", "4+"] 
   type: radio
   name: q15
 
