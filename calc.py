@@ -1,10 +1,10 @@
 def calculate(scorelist):	
 	# named the value of each question 'score' for now
-    results_a = scorelist('q1') * (scorelist('q2') / 30.5) * scorelist('q3')
-    results_b = scorelist('q4') ? (scorelist('q5') * scorelist('q6')) : scorelist('q7') * 0.25 # weight for answer 2.1.2
-    results_c = (scorelist('q8') * scorelist('q9') * scorelist('q10') * scorelist('q11') + scorelist('q12') * scorelist('q13')) / 2 # normalization factor
-    results_d = (scorelist('q14') + scorelist('q15')) / 2 # normalization factor
-    results_e = ((scorelist('q16') * scorelist('q17') * scorelist('q18') * scorelist('q19')) + scorelist('q20') +  scorelist('q21') + scorelist('q22') + scorelist('q23') + (scorelist('q24') * scorelist('q25') * scorelist('q26')) + (scorelist('q27') * scorelist('q28'))) / 7 # normalization factor
+    results_a = scorelist.get('q1') * (scorelist.get('q2') / 30.5) * scorelist.get('q3')
+    results_b = scorelist.get('q4') ? (scorelist.get('q5') * scorelist.get('q6')) : scorelist.get('q7') * 0.25 # weight for answer 2.1.2
+    results_c = (scorelist.get('q8') * scorelist.get('q9') * scorelist.get('q10') * scorelist.get('q11') + scorelist.get('q12') * scorelist.get('q13')) / 2 # normalization factor
+    results_d = (scorelist.get('q14') + scorelist.get('q15')) / 2 # normalization factor
+    results_e = ((scorelist.get('q16') * scorelist.get('q17') * scorelist.get('q18') * scorelist.get('q19')) + scorelist.get('q20') +  scorelist.get('q21') + scorelist.get('q22') + scorelist.get('q23') + (scorelist.get('q24') * scorelist.get('q25') * scorelist.get('q26')) + (scorelist.get('q27') * scorelist.get('q28'))) / 7 # normalization factor
 	
 	weight_a = 30
 	weight_b = 30
