@@ -67,12 +67,12 @@
   name: q13
 #
 - question: 5. How often have you used public transportation the last 14 days?
-  fields: ["0", "1-14","15+"] 
+  fields: [["0", 0], ["1-14", 0],["15+", 0]] 
   type: radio
   name: q14
 
 - question: 6. Have you been to any high risk area in the last 14 days?
-  fields: ["1", "2-3", "4+"] 
+  fields: [["1", 0], ["2-3", 0], ["4+", 0]] 
   type: radio
   name: q15
 
