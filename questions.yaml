@@ -74,57 +74,57 @@
   type: radio
   name: q15
 
-- question: 8. How many people do you get in contact with in a day? 
+- question: 7.2. How many people do you get in contact with in a day? 
   fields: ["0", "1-5", "5-10", "10+"] 
   type: radio
   name: q16
 
-- question: 9. How many new people do you do you get in contact with in a day? 
+- question: 7.3. How many new people do you do you get in contact with in a day? 
   fields: ["0", "1-5", "5-10", "10+"] 
   type: radio
   name: q17
 
-- question: 10. How many times a week do you visit stores (supermarkets, pharmacies, etc)? 
+- question: 8. How many times a week do you visit stores (supermarkets, pharmacies, etc)? 
   fields: ["0", "1-3", "4-10", "11+"] 
   type: radio
   name: q18
 
-- question: 11. How many people are there in your household? 
+- question: 9. How many people are there in your household? 
   fields: ["1", "2", "3-6", "7+"] 
   type: radio
   name: q19
 # TODO: 12-13 are same questions as 8-9
-- question: 12. How many people do you have close contact with in a day(Less than 2m)?
+- question: 10. How many people do you have close contact with in a day(Less than 2m)?
   fields: ["0", "1-2", "3-6", "7+"] 
   type: radio
   name: q20
 
-- question: 13. How many new people do you have close contact with in a day?
+- question: 11. How many new people do you have close contact with in a day?
   fields: ["0", "1-3", "4+"] 
   type: radio
   name: q21
 
-- question: 14. Do you exercise?
+- question: 12. Do you exercise?
   fields: ["Yes", "No"] 
   type: radio
   name: q22
 
-- question: 14.1. If yes, do you exercise outdoors?
+- question: 12.1. If yes, do you exercise outdoors?
   fields: ["Yes", "No"] 
   type: radio
   name: q23
 
-- question: 14.2. If yes, how many people do you get close contact during exercise?
+- question: 12.2. If yes, how many people do you get close contact during exercise?
   fields: ["0", "1-5", "6+"] 
   type: radio
   name: q24
 
-- question: 15. Are you living in a big city?
+- question: 13. Are you living in a big city?
   fields: ["Yes", "No"] 
   type: radio
   name: q25
 
-- question: 15.1. If yes, city center or rural?
+- question: 13.1. If yes, city center or rural?
   fields: ["Central", "Rural"] 
   type: radio
   name: q26
