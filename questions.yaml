@@ -5,13 +5,14 @@
 
 -  question: 1.1. Which of the following symptoms are relevant to you?
    fields: [["Fever", 0], ["Dry cough", 0], ["Fatigue", 0], ["Sputum Production", 0], ["Shortness of Breath", 0], 
-   ["Muscle or Joint Pain", 0], ["Sore Throat", 0], ["Headache", 0], ["Chills", 0], ["Nausea or Vomitting", 0],
-   ["Nasal Congestion", 0], ["Diarrhea", 0]]
+          ["Muscle or Joint Pain", 0], ["Sore Throat", 0], ["Headache", 0], ["Chills", 0], ["Nausea or Vomitting", 0],
+          ["Nasal Congestion", 0], ["Diarrhea", 0]]
    type: checkbox
    name: q2
 
 -  question: 1.2. Since when have you been experiencing these complaints?
-   fields: ["In the last 14 days", "In the last 3 months", "Chronically/Time to Time in the last years", "N/A"]
+   fields: [["In the last 14 days", 0], ["In the last 3 months", 0],
+           ["Chronically/Time to Time in the last years", 0], ["N/A", 0]]
    type: radio
    name: q3
 #    
