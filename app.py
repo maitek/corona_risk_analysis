@@ -26,9 +26,10 @@ def poll():
         print(item)
         if item["type"] == "radio":
             score_data[name] = request.args.get(name)
+        print()
     
     data = dict()
-    data["results"] = score_data["q1"]
+    data["results"] = calculate(score_data)
     return render_template('results.html', data=data)
 
 
